@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(/ocean-3605547_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+/*header css*/
+.header{
+    background-color: rgba(173, 157, 157, 0.767);
+    display: flex;
+    height: 110px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.header .title h1{
+    color: aqua;
+}
+.header .title h1 span{
+    color: black;
+}
+.header .nav ul li{
+    list-style-type: none;
+}
+.header .nav ul li a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: aqua;
+    font-size: 25px;
+   /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+}
+.header .nav ul li a:hover{
+    color: black;
+}
+/*header bitiş*/
+
+/* ana kısım başlangıç*/
+.main {
+    height: 50hv;
+    margin-top: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.main .info{
+height: 100%;
+max-width: 800px;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 20px;
+}
+.main .info h1 {
+    color: brown;
+}
+.main .info p {
+    color: gray;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+.main .info p b {
+    color: brown;
+    text-transform: capitalize;
+}
+.main .info button{
+    border: none;
+    background-color: brown;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.main .info button:hover{
+    background-color: rgb(196, 89, 89);
+}
+/*ana kısım btiş*/
+/*Table alanı başlangıç*/
+.table-container{
+    width: 80%;
+    margin: 20px auto;
+}
+.table-container table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+
+}
+th, td{
+    padding: 8px;
+    border: 1px solid gray;
+}
+th{
+    background-color: rgb(168, 157, 157);
+}
+/*table alanı bitiş*/
+/* Form alanı başlangıç*/
+.form-container{
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 100px;
+    background-color: rgb(202, 202, 187);
+}
+label{
+    font-weight: bold;
+}
+#ad,
+#email,
+textarea{
+    width: 99%;
+    padding: 10px;
+    border: 1px solid rgb(44, 21, 21);
+    border-radius: 5px;
+}
+.btn{
+    background-color: rgb(107, 193, 226);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(5, 20, 70);
+}
+/* Form alanı bitiş*/
+/*Footer alanı başlangıç*/
+.footer{
+    background-color: #333;
+    color: white;
+    height: 110px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Footer alanı bitiş*/
+/*media sorgusu yapacagız*/
+@media (max-width: 800px); {
+    .header .nav{
+        display: none;
+    }
+   /* .header{
+        background-color: rgb(12, 153, 153);
+    } (Bu kod ekran 800px altına düstüğünde header alanı aqua renk olsun anlamına geliyor*/
+}
